@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+}
+
+#booksTable {
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid rgb(82, 82, 82);
+}
+
+th {
+    background: rgb(196, 195, 195);
+    border-style: none none solid;
+    border-width: 0 0 1px;
+}
+
+#booksTable, th, td {
+    /* border: 1px black solid; */
+    /* border-collapse: collapse; */
+    text-align: center;
+};

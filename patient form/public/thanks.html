@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p>
+            Click the button to return the value of the first element in the
+            array that has a value above a specific number.
+        </p>
+        <p>Minimum age: <input type="number" id="ageToCheck" value="33" /></p>
+        <button onclick="myFunction()">Try it</button>
+        <input type="date" id="dt">
+        <p>Value: <span id="demo"></span></p>
+
+        <p>
+            <strong>Note:</strong> The find() method is not supported in IE 11
+            (and earlier versions).
+        </p>
+
+        <script>
+            var ages = [
+                { name: "Farasat",age: 33 },
+                { name: "Sara", age: 31 },
+                { name: "Rahmahn", age: 6 },
+                { name: "Safa", age: 4 }
+            ];
+
+
+
+            function age(person){
+                let ageChk =Number(document.getElementById('ageToCheck').value)
+                return person.age === ageChk;
+            }
+            window.onload = function(){
+            var curDate = new Date,
+            curDay = curDate.getDate() < 10? "0" + curDate.getDate(): curDate.getDate(),
+            curMon = (curDate.getMonth() + 1) < 10? "0" + (curDate.getMonth() + 1): (curDate.getDate() + 1),
+            curYear = curDate.getFullYear(),
+            today = curYear + "-"+curMon+"-"+ curDay;
+            var dt = document.getElementById('dt');
+            dt.max = today
+            }
+            function myFunction() {
+                document.getElementById("demo").innerHTML = ages.find(
+                    age
+                ).name;
+            }
+        </script>
+    </body>
+</html>

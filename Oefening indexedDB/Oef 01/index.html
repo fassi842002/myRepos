@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="scripts/jquery-3.4.1.js"></script>
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="style/default.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="bookAdd">
+        <h2 id="currentAction"></h2>
+        <form action="#">
+            <label for="title">Title</label>
+            <input type="text" id="title">
+            <label for="author">Author</label>
+            <input type="text" id="author">
+            <label for="year">Year</label>
+            <input type="text" id="year">
+            <label for="volume">Volume</label>
+            <input type="text" id="volume">
+            <button id="btnAdd">Add book</button>
+        </form>
+    </section>
+    <section id="bookSection">
+        <header>
+            <h1>Book Data</h1>
+        </header>
+        <table id="booksTable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Year</th>
+                    <th>Volume</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+    </section>
+</body>
+</html>
